@@ -1,0 +1,13 @@
+C:\Users\71884\Desktop\WinTest\bin\Debug\WinTest.exe.config
+C:\Users\71884\Desktop\WinTest\bin\Debug\WinTest.exe
+C:\Users\71884\Desktop\WinTest\bin\Debug\WinTest.pdb
+C:\Users\71884\Desktop\WinTest\obj\Debug\WinTest.csprojAssemblyReference.cache
+C:\Users\71884\Desktop\WinTest\obj\Debug\WinTest.Form1.resources
+C:\Users\71884\Desktop\WinTest\obj\Debug\WinTest.Properties.Resources.resources
+C:\Users\71884\Desktop\WinTest\obj\Debug\WinTest.csproj.GenerateResource.cache
+C:\Users\71884\Desktop\WinTest\obj\Debug\WinTest.csproj.CoreCompileInputs.cache
+C:\Users\71884\Desktop\WinTest\obj\Debug\WinTest.exe
+C:\Users\71884\Desktop\WinTest\obj\Debug\WinTest.pdb
+C:\Users\71884\Desktop\WinTest\bin\Debug\Newtonsoft.Json.dll
+C:\Users\71884\Desktop\WinTest\bin\Debug\Newtonsoft.Json.xml
+C:\Users\71884\Desktop\WinTest\obj\Debug\WinTest.csproj.CopyComplete
