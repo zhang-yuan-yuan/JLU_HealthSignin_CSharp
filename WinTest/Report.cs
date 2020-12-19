@@ -49,8 +49,6 @@ namespace JLUReportOperator
                 {
                     // TODO
                     throw ex;
-                    //Console.WriteLine(ex);
-                    //continue;
                 }
             }
             return 0;
@@ -77,6 +75,13 @@ namespace JLUReportOperator
             postPayLoad.Add(new KeyValuePair<string, string>("password", password));
             response = httpClient.PostAsync(new Uri(LoginURL), new FormUrlEncodedContent(postPayLoad)).Result;
             string LoginResult = response.Content.ReadAsStringAsync().Result;
+            string LoginError = new Regex("(?<=class=\"for-form errorerror\" value=\").{1,30}(?=(\"))").Match(LoginResult).Groups[0].Value;
+            //Console.Write(LoginResult);
+            //Console.WriteLine(LoginError);
+            if (LoginError == "INVALID_PASSWORD")
+            {
+                throw new Exception("账号或密码错误");
+            }
         }
 
         static string GetCSRFToken(ref HttpClient httpClient, string transaction)
