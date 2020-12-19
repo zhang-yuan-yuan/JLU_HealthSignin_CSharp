@@ -44,6 +44,7 @@ namespace WinTest
 
         string path = @"..\..\test1.json";
         int hour1, hour2, minute1, minute2;
+        int campus, dormitory;
         private void button1_Click(object sender, EventArgs e)
         {
             
@@ -56,8 +57,8 @@ namespace WinTest
                 file.WriteLine("\"username\":\"" + textBox1.Text+"\",");
                 file.WriteLine("\"password\":\"" + textBox2.Text + "\",");
                 file.WriteLine("\"fields\":{");
-                file.WriteLine("\"fieldSQxq\": \"1\",");
-                file.WriteLine("\"fieldSQgyl\": \"1\",");
+                file.WriteLine("\"fieldSQxq\": \""+ campus +"\",");
+                file.WriteLine("\"fieldSQgyl\": \""+ dormitory + "\",");
                 file.WriteLine("\"fieldSQqsh\":\"" + textBox3.Text + "\",");
                 file.WriteLine("\"fieldSQnj\":\"" + textBox1.Text.Substring(textBox1.Text.Length - 4, 4) + "\",");
                 file.WriteLine("\"fieldSQnj_Name\":\"20" + textBox1.Text.Substring(textBox1.Text.Length - 2, 2) + "\",");
@@ -85,6 +86,40 @@ namespace WinTest
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (comboBox1.SelectedItem.ToString()) //获取选择的内容
+            {
+
+                case "中心校区": campus = 1; break;
+                case "南岭校区": campus = 2; break;
+                case "新民校区": campus = 3; break;
+                case "南湖校区": campus = 4; break;
+                case "和平校区": campus = 5; break;
+                case "朝阳校区": campus = 6; break;
+                case "前卫北区": campus = 7; break;
+
+            }
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (comboBox2.SelectedItem.ToString()) //获取选择的内容
+            {
+
+                case "北苑1公寓": dormitory = 1; break;
+                case "北苑2公寓": dormitory = 2; break;
+                case "南苑1公寓": dormitory = 3; break;
+                case "南苑2公寓": dormitory = 4; break;
+                case "南苑3公寓": dormitory = 5; break;
+                case "南苑4公寓": dormitory = 6; break;
+                case "南苑5公寓A区": dormitory = 7; break;
+                case "南苑5公寓B区": dormitory = 8; break;
+                case "南苑5公寓C区": dormitory = 9; break;
+
+            }
         }
 
         private void label6_Click(object sender, EventArgs e)
